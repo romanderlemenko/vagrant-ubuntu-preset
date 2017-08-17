@@ -1,0 +1,8 @@
+.vagrant
+.yardoc
+.idea
+
+doc/
+synced/.*
+!synced/.gitkeep
+
