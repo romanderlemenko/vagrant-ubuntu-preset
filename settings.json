@@ -6,5 +6,23 @@
     "cpus": 1,
     "scripts": [
         { "path": "scripts/bootstrap.sh", "run": "once" }
+    ],
+    "files": [
+        {
+            "source": "files/id_rsa",
+            "destination": "~/.ssh/id_rsa"
+        },
+        {
+            "source": "files/id_rsa.pub",
+            "destination": "~/.ssh/id_rsa.pub"
+        },
+        {
+            "source": "files/known_hosts",
+            "destination": "~/.ssh/known_hosts"
+        }
+    ],
+    "ports": [
+        { "guest": 80, "host": 9696 },
+        { "guest": 3306, "host": 33306 }
     ]
 }
