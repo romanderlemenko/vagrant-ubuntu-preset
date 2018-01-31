@@ -11,7 +11,7 @@ sudo apt-get --yes update
 sudo apt-get --yes install python-software-properties
 sudo apt-get --yes install software-properties-common
 
-sudo apt-get --yes install vim curl git wget zsh nmap
+sudo apt-get --yes install vim curl wget zsh nmap
 
 sudo apt-get --yes install ansible
 
@@ -21,9 +21,6 @@ sudo apt-get --yes install ansible
 sudo apt-get --yes install php5.6
 sudo apt-get --yes install php5.6-pdo php5.6-zip php5.6-curl php5.6-mcrypt php5.6-bcmath php5.6-pgsql php5.6-ssh php5.6-gd
 sudo apt-get --yes install php5.6-xml php5.6-dba php5.6-soap php5.6-mysqli php5.6-xmlrpc php5.6-mysql php5.6-pdo php5.6-mbstring
-sudo apt-get --yes install php7.1
-sudo apt-get --yes install php7.1-pdo php7.1-zip php7.1-curl php7.1-mcrypt php7.1-bcmath php7.1-pgsql php7.1-ssh php7.1-gd
-sudo apt-get --yes install php7.1-xml php7.1-dba php7.1-soap php7.1-mysqli php7.1-xmlrpc php7.1-mysql php7.1-pdo php7.1-mbstring
 
 #
 # Set PHP 5.6 as a default version of PHP
@@ -35,7 +32,6 @@ sudo update-alternatives --set phar.phar    /usr/bin/phar.phar5.6
 #
 # Set Apache default settings
 #
-sudo a2dismod php7.1
 sudo a2enmod php5.6
 sudo a2enmod rewrite
 sudo service apache2 restart
@@ -67,4 +63,3 @@ sudo apt-get --yes -f install
 #
 chsh -s $(which zsh)
 sudo chsh -s $(which zsh)
-#echo vagrant | sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" 
